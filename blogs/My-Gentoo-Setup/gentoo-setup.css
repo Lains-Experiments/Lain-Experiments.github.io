@@ -1,0 +1,155 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: rgb(27, 27, 27);
+    color: rgb(170, 14, 144);
+    font-family: Arial, sans-serif;
+}
+
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #2e2e2e;
+}
+
+ul.nav li {
+    flex: 0 0 auto;
+}
+
+ul.nav li a {
+    font-family: fantasy;
+    display: block;
+    color: rgb(170, 14, 144);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.nav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+ul.nav li a.active {
+    background-color: #252525;
+}
+
+#container {
+    width: 55%;
+    max-width: 100%;
+    margin: 2rem auto;
+    padding: 20px;
+    background-color: rgb(36, 36, 36);
+    overflow-wrap: break-word;
+}
+
+#container h1, #container h2 {
+    text-align: center;
+}
+
+#container p {
+    line-height: 1.6;
+}
+
+
+#container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+footer {
+    width: fit-content;
+    max-width: 95%;
+    margin: 2rem auto 1rem;
+    padding: 8px 12px;
+    background-color: rgb(32, 32, 32);
+    color: rgb(170, 14, 144);
+    text-align: center;
+    border-radius: 6px;
+}
+
+footer a {
+    display: inline-block;
+    margin: 3px;
+    vertical-align: middle;
+}
+
+footer img {
+    display: block;
+    width: auto;
+    height: 35px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 480px) {
+    footer {
+        padding: 6px 8px;
+    }
+
+    footer img {
+        height: 30px;
+    }
+
+    ul.nav li a {
+        padding: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    ul.nav {
+        flex-direction: column;
+    }
+
+    ul.nav li {
+        width: 100%;
+    }
+
+    ul.nav li a {
+        width: 100%;
+        padding: 12px;
+    }
+
+    #container {
+        width: 94%;
+        margin: 1rem auto;
+        padding: 12px;
+    }
+
+    #container h1 {
+        font-size: 1.7rem;
+    }
+
+    #container h2 {
+        font-size: 1.3rem;
+    }
+
+    #container p {
+        font-size: 0.95rem;
+    }
+
+    footer {
+        padding: 12px 5px;
+    }
+
+    footer img {
+        max-height: 50px;
+        width: auto;
+    }
+}
